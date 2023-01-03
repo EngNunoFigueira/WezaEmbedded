@@ -1,4 +1,4 @@
-# WezaEmbedded
+# Weza Embedded
 Firmware Microntroller MSP430FR59*
 
 Dear all,
