@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="iso-8859-1">
+    <meta name="description" content="mpDisplay">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript"> 
+    <title>Nundel Tech multimedia portable display</title>
+    <link rel="stylesheet" href="misestilos.css">
+    <link href="https://fonts.googleapis.com/css" rel="stylesheet">
+    <script src="//api.html5media.info/1.2.2/html5media.min.js"></script>
+</head>
+<body onload="updaInfo()">
+    <div id="displayvideos">
+	   <nav id="sidebar">
+	    <h1 id="utente">SENHA</h1>
+            <ul>
+                <li>NFXDT</li> 
+                <li>HLFAR</li>
+                <li>LRNDO</li>
+                <li>NOEMA</li>
+            </ul>
+        </nav> 
+        <video id="video" autoplay>
+           <source src="medico-Problemas-musculares.webm" type="video/webm"/>
+        </video>
+    </div>
+	<div id="noticias">
+                <marquee style="font-family:Cursive;font-size:34pt;color:#1D3557;height:50px;"scroll="" direction="left" scrolldelay="160">FARM&AacuteCIA NOSSA SRA DA MUXIMA RUA DO AMBRIZ No 34                                   FARM&Aacute;CIA NOSSA SRA. DO CARMO, RUA PROFESSOR ALFREDO DE WIMBI No 304                                       FARM&AacuteCIA NOSSA SRA DA SANTA RUA DE ALMEIDA No 34                                          FARM&AacuteCIA MUKUMBI TRAVESSA DOS MILITARES No                                                  FARMACI&Aacute; MUXIMA RUA DO CARMO LUANDA N0 10 RC                             FARM&AacuteCIA MAMA TITA RUA DOS BAKONGO No 24
+                        FARM&Aacute;CIA MAMA SANTA AVENIDA 4 DE FEVEREIRO No 07          FARM&Aacute;CIA DR. ELUNGA RUA DAS VERDADES No 120      FARM&AacuteRCIA CAPIM DE DEUS RUA NZINGA MBANDI No 13                                                 FARM&AacuteRCIA WELVITCHA RUA DOS PRAZERES No 29                                           FARM&AacuteCIA DR. XAVIER AVENIDA DE LUANDA No 670...</marquee>
+          </div>  
+    <footer>
+            <small>&copy; Nuno Figueira 2019</small>
+    </footer>
+</body>
+</html>
+
+<script>
+  function getNames(item)
+  {
+      let newli   = document.createElement('li');
+      let newSpan = document.createElement('span');
+      let element = document.getElementById('utentes-list');
+      newSpan.innerHTML = `${item.code}`;
+      newli.appendChild(newSpan);
+      element.appendChild(newli);
+  }
+</script>
+
+<script>
+  var listOfCalledTickets = [];
+  var dateTime = new Date();
+
+function clearListOfNames()
+{
+     var list = document.getElementById("utentes-list");
+           while (list.hasChildNodes()) {
+             list.removeChild(list.firstChild);
+         }
+}
+
+function processTicketsCalled(element) {
+// after GET the Tickets from MONGO DB save each unit
+// and update the field status for closed.
+  element.status = "closed";
+  element.closeTime = dateTime.toLocaleDateString();
+  listOfCalledTickets.push(element);
+}
+function putTicketStatusClose() {
+  if(listOfCalledTickets.length >=1) {
+
+      let urlApi = "";
+      var json={};
+      var calledTicket = {};
+      var xhr  = new XMLHttpRequest();
+
+      console.log("ENTROU NO PUT");
+      listOfCalledTickets.forEach( function(ticket){
+         urlApi = 'http://10.10.10.90:5000/registers/'+ ticket._id;
+         calledTicket = {
+            _id: ticket._id,
+            counter: ticket.counter,
+            code: ticket.code,
+            status: ticket.status,
+            serviceType: ticket.serviceType,
+            openTime: ticket.openTime,
+            closeTime: ticket.closeTime
+           };
+
+       console.log("URL:"+ urlApi);
+       console.log("new status:"+ calledTicket.status);
+       console.log("close time:"+ calledTicket.closeTime);
+
+      json = JSON.stringify(calledTicket);
+      xhr.open("PUT", urlApi, true);
+      xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
+      xhr.onload = function () {
+      var users = JSON.parse(xhr.responseText);
+      if (xhr.readyState == 4 && xhr.status == "200") {
+          console.table(users);
+          listOfCalledTicket=[];
+          }
+     else {
+              console.error(users);
+    }
+   }
+   xhr.send(json);
+
+});
+}}
+</script>
+
+<script>
+  /*THIS IS THE WORKER THAT WILL UPDATE THE USER DATA IN BACKGROUND*/
+  function updateInfo() {
+    const worker = new Worker('refreshPainelUserInfo.js')
+    worker.onmessage = function(event) {
+       putTicketStatusClose();
+       clearListOfNames();
+       const url='http://10.10.10.90:5000/registers/terminal';
+          fetch(url)
+           .then(response => response.json())
+           .then(data => {
+             data.message.forEach(getNames);
+             data.message.forEach(processTicketsCalled);
+          })
+       .catch(error => alert(error));
+   };
+ }
+</script>
+
