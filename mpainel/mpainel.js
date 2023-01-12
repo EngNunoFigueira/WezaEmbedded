@@ -2,22 +2,22 @@
  * Author   : Nuno Figueira                                                                          *
  * Dev Year : 2019/2020                                                                              *
  * Release  : 1.1.0 beta                                                                             *
- * Project  : Agenda Medic - Mpainel                                                                 *
+ * Project  : Agd-Medic, Monitor Mpainel                                                             *
  *                                                                                                   *
  * Javascript functionality:                                                                         *
  * The main purpose of this javascript code is to manager the info of tickets printed by the         *
  * terminal machine:                                                                                 *  
- * The Restfull API is called to GET all tickets, with status waiting, and the ticket will be print  *
+ * The Restfull API is called to GET all tickets, with status called, and the ticket will be print   *
  * on Monitor screen.                                                                                *
  * But, after the ticket timeout expire, the Resfull API, PUT method, is fetch to updated the fields *
- * status and datetime. To closed and with current time, respectivily.                               * 
+ * status and datetime. To closed and with current time, respectively.                               * 
  * Using a JS Worker we don't need refresh the full Single Page. Just refresh the HTML element list  *
  * of ticket, when the Worker event is trigger.                                                      *    
  * **************************************************************************************************/
 
 // Function description:
-// Create a dynamic HTML compoment, as type list, to display the ticket printed on the terminal machine.
-// Everytime we print or requeste a new ticket, on the terminal, this function will added an element in the HTML list.
+// Create a dynamic HTML compoment, of type list, to display the ticket printed on the terminal machine.
+// Everytime we print or request a new ticket, on the terminal, this function will added an element in the HTML list.
 function getNames(item) {
   let newli = document.createElement('li');
   let newSpan = document.createElement('span');
@@ -27,15 +27,14 @@ function getNames(item) {
   element.appendChild(newli);
 }
 
-// Declaeration of global variables:
+// Helpers: Declaration of global variables:
 var listOfCalledTickets = [];
 var dateTime = new Date();
 
 // Function description:
-// This function remove all the ticked "closed" from the display screen.
+// This function remove all the ticket "closed" from the display screen.
 function clearListOfTicketsId() {
   var list = document.getElementById("ticket-list");
-  //if (list.length > 0)
   while (list.hasChildNodes()) {
     list.removeChild(list.firstChild);
   }
@@ -43,7 +42,7 @@ function clearListOfTicketsId() {
 
 // Function description:
 // Execute the Restfull API <POST> to update the Ticket status to close.
-// The ticket field datetime will be updated too with the current close time.
+// And the ticket field datetime , will be updated too with the current close time.
 function processTicketsCalled(element) {
   element.status = "close";
   element.closeTime = dateTime.toLocaleDateString();
@@ -51,10 +50,10 @@ function processTicketsCalled(element) {
 }
 
 // Function description:
-// THIS FUNCTIONS IS CALL EACH 5 MINUTES TO UPDATE THE STATUS OF OPENS TICKETS...
-// After the timer to display the ticket on the monitors expired, the ticket show on 
-// the monitor is removed. And the field status and the datetime, are updated with the 
-// closed and the current time respectivily. To finish the procedure the PUT is executed.
+// THIS FUNCTIONS IS CALLED EACH 2.5 MINUTES TO UPDATE THE STATUS OF OPENS TICKETS...
+// After the timer used to display the ticket on the monitors expired, this ticket is hide 
+// or removed from the list. To complete the process, the field status and the close time, are updated with the 
+// values: closed and the current time respectively. To finish the procedure the PUT is executed.
 function putTicketStatusClose() {
   if (listOfCalledTickets.length >= 1) {
 
@@ -101,8 +100,8 @@ function putTicketStatusClose() {
 
 // Function description:
 // The main algorithm will be executed under a Javascript WORKER procedure.
-// In each event of the Worker, the followings methods are will be executed:
-// putTicketStatusClose () -> update the ticket fields, status and datetime.
+// In each event of the Worker, the followings methods will be executed:
+// putTicketStatusClose () -> update the ticket fields, status and close time.
 // clearListOfTicketsId () -> stop display the expiered ticket on the monitor. 
 // getNames ()             -> Get the ID of the ticket to display on the monitor.
 // processTicketsCalled () -> save the "PUT" the ticket with the fields updated. 
@@ -116,7 +115,7 @@ function updateInfo() {
       .then(response => response.json())
       .then(data => {
         data.message.forEach(getNames);
-        //data.message.forEach(processTicketsCalled);
+        data.message.forEach(processTicketsCalled);
       })
       .catch(error => alert(error));
   };

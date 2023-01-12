@@ -5,12 +5,12 @@
  * Project  : Agenda Medic - Mpainel                                                                  *
  *                                                                                                    *
  * Javascript worker functionality:                                                                   *
- * The worker is not full developed in this release. For now its basically used as a timer for now.   *
- * to manager the fetch interval used to refresh the list o Tickets ID to display.                    *
+ * The worker is not full implemented in this release. For now, its basically used as a timer to      *
+ *  manager the fetch interval used to refresh the list o Tickets ID to display.                      *
  *                                                                                                    *
- * But the point is:                                                                                  *
+ * Benefits to use JS Worker:                                                                         *
  * In future release, we pretend use a JS worker to execute the Fecth API data actions. Avoid doing   *
- * this operation on fronted side.                                                                    *
+ * this operation on front-end side.                                                                  *
  * ****************************************************************************************************/
 
 let expireTimer = 1;
