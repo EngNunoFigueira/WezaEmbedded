@@ -1,11 +1,11 @@
 const express = require('express')
-const app     = express()
+const app = express()
 
 require('dotenv').config();
 console.log(process.env);
 
 app.get('/', function (req, res) {
-  res.send('Hello World!')
+  res.send('NundelTech server started ...')
 })
 
 app.listen(3000, function () {
