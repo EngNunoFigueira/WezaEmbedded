@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FrotaComponent } from './frota/frota.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { MapaComponent } from './mapa/mapa.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
 {path: 'documents', component:MotoristasComponent},
 {path: '', component:LoginComponent},
 {path: 'login', component:LoginComponent},
+{path: 'frota', component:FrotaComponent},
 
 ];
 
