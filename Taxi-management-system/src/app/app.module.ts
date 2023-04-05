@@ -7,13 +7,17 @@ import { LoginComponent } from './login/login.component';
 import { MotoristasComponent } from './motoristas/motoristas.component';
 import { MapaComponent } from './mapa/mapa.component';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { HomeComponent } from './home/home.component';
+import { ProfilesComponent } from './profiles/profiles.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     MotoristasComponent,
-    MapaComponent
+    MapaComponent,
+    HomeComponent,
+    ProfilesComponent
   ],
   imports: [
     BrowserModule,
