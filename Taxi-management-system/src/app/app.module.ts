@@ -9,6 +9,7 @@ import { MapaComponent } from './mapa/mapa.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { HomeComponent } from './home/home.component';
 import { ProfilesComponent } from './profiles/profiles.component';
+import { FrotaComponent } from './frota/frota.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProfilesComponent } from './profiles/profiles.component';
     MotoristasComponent,
     MapaComponent,
     HomeComponent,
-    ProfilesComponent
+    ProfilesComponent,
+    FrotaComponent
   ],
   imports: [
     BrowserModule,
