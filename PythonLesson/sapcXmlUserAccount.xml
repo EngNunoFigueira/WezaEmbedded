@@ -1,0 +1,39 @@
+<UserAccountM>
+   <userAccountMId>1</userAccountMId>
+   
+  <UserAccount>
+    <userAccountId>systemreadonly</userAccountId>
+    <accountPolicy>ManagedElement=1,SystemFunctions=1,SecM=1,UserManagement=1,LocalAuthenticationMethod=1,AccountPolicy=Default</accountPolicy>
+    <administrativeState>UNLOCKED</administrativeState>
+    <passwordPolicy>ManagedElement=1,SystemFunctions=1,SecM=1,UserManagement=1,LocalAuthenticationMethod=1,PasswordPolicy=Default</passwordPolicy>
+    <userName>systemreadonly</userName>
+    <roles>SapcSystemReadOnly</roles>
+    <SshPublicKey>
+      <sshPublicKeyId>1</sshPublicKeyId>
+      <publicKeyContent>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDSbyPFF3iw8ytW2F7RaaOK02KNxihB5ZTBHONeN0xb7vFwloWYMbe/gw1Od6eA35eDprsP3h8K6PW4GJRPhy6eiLPK+cN1lyFyygwoHGvlsfAmHhE6t8kxIUm3w/UU+zfX709zzBgBm7pGmaNCHy4ddcowzquBO3mMfj3cFj714KJvfd1VAygADy4tnzjbPY9yQcKQ3y7R1rR01Wwg3WoaguK0DfZ5f76pGxoi9dXsGMveSo+wTUL52H4HU8/FwnJAjlvDJgRbSveH5Ge4k9NQeiebIh/av8VnykyjBtDo/JaZhTjLR84aPxhkVZworuHA/Bq6bMe1h1cRJqY89oof systemreadonly@SC-1</publicKeyContent>
+     </SshPublicKey>
+  </UserAccount>
+  
+  <UserAccount>
+   <userAccountId>sapcprov</userAccountId>
+   <accountPolicy>ManagedElement=1,SystemFunctions=1,SecM=1,UserManagement=1,LocalAuthenticationMethod=1,AccountPolicy=Default</accountPolicy>
+   <administrativeState>UNLOCKED</administrativeState>
+   <passwordPolicy>ManagedElement=1,SystemFunctions=1,SecM=1,UserManagement=1,LocalAuthenticationMethod=1,PasswordPolicy=Default</passwordPolicy>
+   <userName>sapcprov</userName>
+   <roles>SapcProvisioningAdministrator</roles>
+   <SshPublicKey>
+     <sshPublicKeyId>1</sshPublicKeyId>
+     <publicKeyContent>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCuluf3/beNpxlGhz51k7gpPe3Ndc7d39i88+3DZWEdYDca7mMpSv4TB4NRZzxN5l2nJmJsP70AtcRsq5286L0nuDGCXM//bdSTsdmRj89Z/YspuJHD0meouuztcRmB3Yt/lgy5K2wHLt6ldy1W7G6dE9+14tECOyeO9d54+AB2FELVjKsFZSnOm/UJUf9+yX2f+x6LgoJrzCrE9cADr6ij09QwJ30ebgRvC96/AQXvOMIUxORJBMiGN2n81FzBt7rZLvdK+t2iVkT+ppJjeAVjR66/Kzqzn8u6JEXvOgrLIZ8rUozaYq3nYCrhgnQXSHhq0PYRH6/EUSqUnE9VcwdL sapcprov@SC-1</publicKeyContent>
+   </SshPublicKey>
+  </UserAccount>
+  
+ <UserAccount>
+    <userAccountId>sapcadmin</userAccountId>
+    <accountPolicy>ManagedElement=1,SystemFunctions=1,SecM=1,UserManagement=1,LocalAuthenticationMethod=1,AccountPolicy=Default</accountPolicy>
+    <administrativeState>UNLOCKED</administrativeState>
+    <passwordPolicy>ManagedElement=1,SystemFunctions=1,SecM=1,UserManagement=1,LocalAuthenticationMethod=1,PasswordPolicy=Default</passwordPolicy>
+    <userName>sapcadmin</userName>
+    <roles>SuperUser</roles>
+ </UserAccount>
+ 
+</UserAccountM>
