@@ -1,0 +1,17 @@
+22019-06-11T11:37:16.724+02:00 IN SAPC_PL-6: "SLR sent. Protocol: Sy, SessionId: sapcOwnHostId.operatorRealm.com;1560242739;50313416;111117100006, Subs$
+2019-06-11T11:37:16.724+02:00 IN SAPC_PL-6: "SLA received. Protocol: Sy, Result-Code: 2001, SessionId: sapcOwnHostId.operatorRealm.com;1560242739;50313$
+2019-06-11T11:37:16.724+02:00 IN SAPC_PL-6: "Received balance. SubsId: 111117100006, SubsDataplan: , Counter: ThresholdA, CounterState: NotSurpassed, P$
+2019-06-11T11:37:16.724+02:00 IN SAPC_PL-6: "SNR received. Protocol: Sy, SessionId: sapcOwnHostId.operatorRealm.com;1560242739;50313416;111117100006"
+2019-06-11T11:37:16.724+02:00 IN SAPC_PL-6: "Received balance. SubsId: 111117100006, SubsDataplan: , Counter: ThresholdA, CounterState: Surpassed, Prot$
+2019-06-11T11:37:16.724+02:00 IN SAPC_PL-6: "SNA sent. Protocol: Sy, Result-Code: 2001, SessionId: sapcOwnHostId.operatorRealm.com;1560242739;50313416;$
+2019-06-11T11:37:16.725+02:00 IN SAPC_PL-6: "STR sent. Protocol: Sy, SessionId: sapcOwnHostId.operatorRealm.com;1560242739;50313416;111117100006"
+2019-06-11T11:37:16.725+02:00 IN SAPC_PL-6: "STA received. Protocol: Sy, Result-Code: 2001, SessionId: sapcOwnHostId.operatorRealm.com;1560242739;50313$
+2019-06-11T11:37:16.862+02:00 IN SAPC_PL-4: "SNR received. Protocol: Sy, SessionId: sapcOwnHostId.operatorRealm.com;1560242756;318748831;111117100005"
+2019-06-11T11:37:16.862+02:00 IN SAPC_PL-4: "Received balance. SubsId: 111117100005, SubsDataplan: , Counter: ThresholdA, CounterState: Surpassed, Prot$
+22019-06-11T11:37:16.724+02:00 IN SAPC_PL-6: "SLR sent. Protocol: Sy, SessionId: sapcOwnHostId.operatorRealm.com;1560242739;50313416;111117100006, Subs$
+$;50313416;111117100006"
+
+Manuela Antonia Margarida Magalhes
+Joao Oliveira Pereira da Gama
+Antonio Mateus Pinto da Veiga
+

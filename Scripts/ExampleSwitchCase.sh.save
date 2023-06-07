@@ -1,0 +1,28 @@
+#!/bin/bash
+
+echo 'This a testing example to remember me how use the switch-case in bash'
+
+nParameter=$#
+readonly option=$1
+echo The number o parameters is $#
+while $wq
+nParameter > 0
+do
+  echo The first parameters is : $"$nParamter"
+  nParameter=$(nParamter-1)
+done
+
+case $option in 
+     ubuntu)
+     echo "I am using the ubuntu 14.04 LTS"
+     ;;
+     windows)
+     echo "I using the windows teen" 
+     ;;
+     *)
+     echo "I can working with any software solution"
+     ;;
+esac
+
+echo "Testing programming ending..."
+

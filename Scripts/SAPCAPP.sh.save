@@ -1,0 +1,18 @@
+#/bin/bash -e
+
+max=1x0
+counter=10
+while [ $count -eq $max ]
+do
+  echo "Hello dear friend I gonna sleep a feel seconds"
+  sleep 1
+  counter=$(($counter-1))
+done
+
+echo Finish program with count equal to $counter
+
+#while [ $i -lt 4 ]
+#do
+#xterm &
+#i=$[$i+1]
+#done
