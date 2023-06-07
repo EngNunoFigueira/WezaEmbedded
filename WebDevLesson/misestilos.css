@@ -1,0 +1,55 @@
+body {
+    background-color: #EEE;
+}
+
+#container{
+    background-color: darkslategrey;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#content{
+    padding: 10px;
+}
+
+#tableNames {
+    width: 180px; 
+    float: left;
+    padding: 0;
+}
+
+h1,h2 {
+     margin: 0;
+}
+
+#tableNames ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#displayvideos {
+    width: 560px; 
+    float: right;
+}
+
+#header {
+    background-color: #66CCFF;
+    color: white;
+    text-align: center;
+}
+
+.noticias{
+    text-align: left;
+    text-size-adjust: 20;
+    text-emphasis-color: #eeee23;
+}
+.serif { font-family: "Adobe Garamond Premier Pro", Garamond, "Linux Libertine", "Times New Roman", Georgia, serif; }
+#pie {
+    clear: both;
+    padding: 10px;
+    background-color: #999999;
+    color: white;
+    text-align: left;
+
+}

@@ -1,0 +1,79 @@
+<!DOCUMENT TYPE html>
+<html>
+<head>
+    <meta charset="iso-8859-1">
+    <meta name="description" content="mpDisplay">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript"> 
+    <title>Nundel Tech multimedia portable display</title>
+    <link rel="stylesheet" href="misestilos.css">
+    <script src="//api.html5media.info/1.2.2/html5media.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="header"> 
+            <h1> This is Multimedia Display </h1>
+        </div>
+        <div id="content">
+            <div id="tableNames">
+              <h2>Utentes</h3>
+              <ul id="name">
+                  <li>NFXDT</li>
+                  <li>HLFAR</li>
+                  <li>LRNDO</li>
+                  <li>NUNO MIGUEL FIGUEIRA</li>
+              </ul>
+            </div>
+            <div id="displayvideos">
+                 <!--<h2>Publicidad</h2>v--> 
+                  <video id="video" width="570" height="420" autoplay>
+                     <source src="Pablo Alboran-Tanto (Edicion Especial).webm" type="video/webm"/>
+                  </video>
+            </div>
+      </div>
+      <footer id="pie">
+          <div id="noticias">NOTICIAS
+                <marquee style="font-family:Cursive;font-size:10pt;color:#ffcc00;height:20px;" scroll" bgcolor="#999999" direction="left" scrolldelay="160">PRESIDENTE MARCELO REBELO DE SOUSA EM MACAU,
+                        MAIS NOTÍCIAS HOJE AS 19H00 NO JORNAL DA NOITE FESTA                                                                                                                      EM BRAGA A LATADA ESTE ANO SE JUNTA COM O ENTERRO DA GATAESTE
+                        ESTE ANO SE REALIZAR AS 21H00  NOIVA REJEITA MARIDO NO ALTAR   PAI MUITO FELIZ PELAS NOTAS DOS FILHOS... 
+                </marquee>
+          </div>
+            <small>&copy; Nuno Figueira 2019</small>
+       </footer>
+    </div>
+       
+</body>
+</html>
+
+
+<script>
+  function getNames(item)
+  {
+      let newli   = document.createElement('li');
+      let newSpan = document.createElement('span');
+      let element = document.getElementById('name');
+      newSpan.innerHTML = `${item.email}`;
+      newli.appendChild(newSpan);
+      element.appendChild(newli); 
+  }
+</script>
+
+<script>
+     const url='http://localhost:3000/admins/';
+     fetch(url)
+    .then(response => response.json())
+    .then(data => {
+          /*let newli   = document.createElement('li');
+          let newSpan = document.createElement('span');
+          let element = document.getElementById('name');
+          newSpan.innerHTML = `${data.message[...].email}`;
+          newli.appendChild(newSpan);
+          element.appendChild(newli); */
+          data.message.forEach(getNames);
+        })
+    .catch(error => alert(error));
+</script>
+
+
+
+
+      
