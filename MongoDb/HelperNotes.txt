@@ -1,0 +1,62 @@
+This command is used to starting the mongod in shell 
+
+#START MONGODB:
+
+$ mongo
+
+# LIST DATABASES:
+
+$ > db
+
+# CREATE A DATABASE:
+
+db.createCollection(name, options)
+
+# DELETE A DATABASE:
+
+$ > db.dropDatabase()
+
+# DELETE A SPECFIC DATABASE:
+
+$ > db.dropDatabase()
+
+# SWITCH TO A ANOTHER DATABASES:
+
+$ > use <Mydb<
+
+# CREATE A COLLECTION ON MONGO:
+
+$ >db.createCollection("mycol", { capped : true, autoIndexID : true, size : 6142800,max : 10000 } )
+
+# INSERT DATA TO A COLLECTION:
+
+$ >db.tutorialspoint.insert({"name" : "tutorialspoint"})
+
+# USAGE COMMANDS:
+
+$ > db.utentes.find()
+
+$ > db.utentes.find().limite(2)
+
+$ > db.utentes.findOne()
+
+$ > db.utentes.find({title: comedia}).count()
+
+$ > db.utentes.find().sort({title: comedia})
+
+$ > db.utentes.find({title: comedia}).pretty()
+
+$ > db.utentes.find().sort({title: comedia})
+
+$ > db.utentes.find().forEach(function(data) { print('theses are the utentes names : ' +data.name) });
+
+UPDATE:
+
+$ > db.utentes.update({ name: 'Mike Jordan'},      {         name: 'Beyonce',         room: '90',         date:  Date()      },      {        upsert: true      }    )
+
+$ > db.utentes.update({name: 'Beyonce' },{$inc: {age: 2 } }, {upsert: true} )
+
+DELETE :
+
+$ > db.utentes.remove({name: 'Beyonce' })
+    db.utentes.remove({name: 'Mike Bolton'})
