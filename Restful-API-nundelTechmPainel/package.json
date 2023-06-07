@@ -1,0 +1,25 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "This restful-API is to support the mPainel project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Nuno Figueira",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^8.1.0",
+    "start-watch": "^3.0.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.1",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "nodemon": "^1.19.2"
+  }
+}
