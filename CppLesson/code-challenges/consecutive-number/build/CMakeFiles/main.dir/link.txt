@@ -1,0 +1,1 @@
+/usr/bin/c++  -lboost_program_options   CMakeFiles/main.dir/main.cpp.o  -o main  -lpthread /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0 

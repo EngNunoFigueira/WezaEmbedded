@@ -1,0 +1,3 @@
+/media/nundelTech/CppLesson/code-challenges/prime-numbers/build/CMakeFiles/rebuild_cache.dir
+/media/nundelTech/CppLesson/code-challenges/prime-numbers/build/CMakeFiles/edit_cache.dir
+/media/nundelTech/CppLesson/code-challenges/prime-numbers/build/CMakeFiles/main.dir

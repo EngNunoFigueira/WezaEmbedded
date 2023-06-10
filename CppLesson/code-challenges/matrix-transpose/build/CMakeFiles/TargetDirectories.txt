@@ -1,0 +1,3 @@
+/media/nundelTech/CppLesson/code-challenges/matrix-transpose/build/CMakeFiles/rebuild_cache.dir
+/media/nundelTech/CppLesson/code-challenges/matrix-transpose/build/CMakeFiles/edit_cache.dir
+/media/nundelTech/CppLesson/code-challenges/matrix-transpose/build/CMakeFiles/main.dir

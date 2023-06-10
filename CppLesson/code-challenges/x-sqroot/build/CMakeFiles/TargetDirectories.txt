@@ -1,0 +1,3 @@
+/media/nundelTech/CppLesson/code-challenges/x-sqroot/build/CMakeFiles/rebuild_cache.dir
+/media/nundelTech/CppLesson/code-challenges/x-sqroot/build/CMakeFiles/edit_cache.dir
+/media/nundelTech/CppLesson/code-challenges/x-sqroot/build/CMakeFiles/main.dir

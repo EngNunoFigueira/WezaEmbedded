@@ -1,0 +1,3 @@
+/media/nundelTech/CppLesson/code-challenges/reverse-string/build/CMakeFiles/rebuild_cache.dir
+/media/nundelTech/CppLesson/code-challenges/reverse-string/build/CMakeFiles/edit_cache.dir
+/media/nundelTech/CppLesson/code-challenges/reverse-string/build/CMakeFiles/main.dir
