@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../includes/DbContext.h
+DbContext.h
+../includes/DbContext.h
+iostream
+-
+vector
+-
+
+../includes/ObserverPattern.h
+iostream
+-
+DbContext.h
+../includes/DbContext.h
+ObserverPattern.h
+../includes/ObserverPattern.h
+
+/media/nundelTech/CppLesson/design-parttern/Observer/src/DbContext.cpp
+iostream
+-
+DbContext.h
+/media/nundelTech/CppLesson/design-parttern/Observer/src/DbContext.h
+
+/media/nundelTech/CppLesson/design-parttern/Observer/src/ObserverPattern.cpp
+iostream
+-
+ObserverPattern.h
+/media/nundelTech/CppLesson/design-parttern/Observer/src/ObserverPattern.h
+

@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../mylibraries/BankService.hpp
+iostream
+-
+BankService.hpp
+../mylibraries/BankService.hpp
+
+../mylibraries/Foo.h
+Foo.h
+../mylibraries/Foo.h
+iostream
+-
+memory
+-
+string_view
+-
+BankService.hpp
+../mylibraries/BankService.hpp
+
+/media/nundelTech/WezaEmbedded/CppLesson/gTest/projectExample02/src/main.cpp
+iostream
+-
+stdio.h
+-
+vector
+-
+utility
+-
+memory
+-
+functional
+-
+initializer_list
+-
+Foo.h
+/media/nundelTech/WezaEmbedded/CppLesson/gTest/projectExample02/src/Foo.h
+BankService.hpp
+/media/nundelTech/WezaEmbedded/CppLesson/gTest/projectExample02/src/BankService.hpp
+

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/mainimo.dir/src/main.cpp.o CMakeFiles/mainimo.dir/src/Foo.cpp.o  -o mainimo 

@@ -1,0 +1,3 @@
+/media/nundelTech/CppLesson/study-cpp-11-14-17-20/build/CMakeFiles/rebuild_cache.dir
+/media/nundelTech/CppLesson/study-cpp-11-14-17-20/build/CMakeFiles/edit_cache.dir
+/media/nundelTech/CppLesson/study-cpp-11-14-17-20/build/CMakeFiles/main.dir

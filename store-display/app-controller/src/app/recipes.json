@@ -1,0 +1,59 @@
+[
+    {
+        "rodaballo": "assets/images/rodaballo-sat.jpg",
+        "lubina": "assets/images/lubina-al-horno-con-patatas.jpg",
+        "bacalao": "assets/images/bacalao-a-la-vizcaina-receta-tradicional_1000.webp",
+        "gambas": "assets/images/arroz-con-marisco_1000.webp",
+        "salmon": "assets/images/arroz-con-salmon_1000.webp"
+    },
+    {
+        "rodaballo": "assets/images/prato-rodaballo.jpg",
+        "lubina": "assets/images/lubina-al-horno-con-verduras.jpg",
+        "bacalao": "assets/images/bacalao-con-tomate-principal_1000.webp",
+        "gambas": "assets/images/arroz-meloso-con-gambones_1000.webp",
+        "salmon": "assets/images/blinis-con-salmon-y-aguacate_1000.webp"
+    },
+    {
+        "rodaballo": "assets/images/rodaballo-al-horno.jpg",
+        "lubina": "assets/images/lubina-al-jefe.jpeg",
+        "bacalao": "assets/images/",
+        "gambas": "assets/images/",
+        "salmon": "assets/images/"
+    },
+    {
+        "rodaballo": "assets/images/rodaballo_relleno.jpg",
+        "lubina": "assets/images/",
+        "bacalao": "assets/images/",
+        "gambas": "assets/images/",
+        "salmon": "assets/images/"
+    },
+    {
+        "rodaballo": "assets/images/rodaballo-berberecho.jpg",
+        "lubina": "",
+        "bacalao": "assets/images/",
+        "gambas": "assets/images/",
+        "salmon": "assets/images/"
+    },
+    {
+        "rodaballo": "assets/images/rodaballo-con-verduras.jpg",
+        "lubina": "",
+        "bacalao": "assets/images/",
+        "gambas": "assets/images/arroz-con-marisco_1000.webp",
+        "salmon": "assets/images/"
+    },
+    {
+        "rodaballo": "assets/images/rodaballo-salsa.jpeg",
+        "lubina": "assets/images/lubina-al-horno-con-patatas.jpg",
+        "bacalao": "assets/images/",
+        "gambas": "assets/images/",
+        "salmon": "assets/images/"
+    },
+    {
+        "rodaballo": "assets/images/rodaballo-al-horno-a-la-bilbaina-01.jpg",
+        "lubina": "assets/images/bacalao-con-tomate-principal_1000.webp",
+        "bacalao": "assets/images/bacalao-con-tomate-principal_1000.webp",
+        "gambas": "assets/images/",
+        "salmon": "assets/images/"
+    }
+]
+

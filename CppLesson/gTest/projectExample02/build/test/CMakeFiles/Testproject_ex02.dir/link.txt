@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/Testproject_ex02.dir/main.cpp.o  -o ../bin/Testproject_ex02  -Wl,-rpath,/media/nundelTech/WezaEmbedded/CppLesson/gTest/projectExample02/build/mylibraries ../mylibraries/libmylibraries.so ../lib/libgtest_main.a ../lib/libgmock_main.a ../lib/libgmock.a ../lib/libgtest.a -lpthread 

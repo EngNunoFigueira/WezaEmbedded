@@ -1,0 +1,5 @@
+{
+  "fish": "rodaballo",
+  "recipes": [1, 2, 3, 4, 5],
+  "qrcode": ["a", "b", "c","d", "e"]
+}

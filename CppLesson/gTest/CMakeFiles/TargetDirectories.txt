@@ -1,0 +1,3 @@
+/media/nundelTech/CppLesson/gTest/CMakeFiles/rebuild_cache.dir
+/media/nundelTech/CppLesson/gTest/CMakeFiles/edit_cache.dir
+/media/nundelTech/CppLesson/gTest/CMakeFiles/main.dir

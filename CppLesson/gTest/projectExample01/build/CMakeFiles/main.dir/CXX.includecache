@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Foo.h
+Foo.h
+../include/Foo.h
+iostream
+-
+string_view
+-
+
+/media/nundelTech/CppLesson/gTest/projectExample01/src/main.cpp
+iostream
+-
+stdio.h
+-
+Foo.h
+/media/nundelTech/CppLesson/gTest/projectExample01/src/Foo.h
+

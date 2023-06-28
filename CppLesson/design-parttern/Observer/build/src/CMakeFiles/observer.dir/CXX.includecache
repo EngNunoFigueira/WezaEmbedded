@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../includes/DbContext.h
+DbContext.h
+../includes/DbContext.h
+iostream
+-
+vector
+-
+
+../includes/Observer.h
+Observer.h
+../includes/Observer.h
+
+/media/nundelTech/CppLesson/design-parttern/Observer/src/main.cpp
+map
+-
+array
+-
+vector
+-
+memory
+-
+stdio.h
+-
+iostream
+-
+algorithm
+-
+unordered_map
+-
+Observer.h
+/media/nundelTech/CppLesson/design-parttern/Observer/src/Observer.h
+DbContext.h
+/media/nundelTech/CppLesson/design-parttern/Observer/src/DbContext.h
+

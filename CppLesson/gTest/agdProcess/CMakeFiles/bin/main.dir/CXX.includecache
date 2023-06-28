@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/nundelTech/CppLesson/gTest/agdProcess/src/Foo.cpp
+iostream
+-
+Foo.h
+/media/nundelTech/CppLesson/gTest/agdProcess/src/Foo.h
+
+/media/nundelTech/CppLesson/gTest/agdProcess/src/Foo.h
+Foo.h
+/media/nundelTech/CppLesson/gTest/agdProcess/src/Foo.h
+iostream
+-
+string_view
+-
+

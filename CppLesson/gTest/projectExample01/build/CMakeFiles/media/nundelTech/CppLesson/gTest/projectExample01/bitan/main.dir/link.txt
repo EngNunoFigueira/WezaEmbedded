@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles//media/nundelTech/CppLesson/gTest/projectExample01/bitan/main.dir/src/main.cpp.o CMakeFiles//media/nundelTech/CppLesson/gTest/projectExample01/bitan/main.dir/src/Foo.cpp.o  -o /media/nundelTech/CppLesson/gTest/projectExample01/bitan/main 

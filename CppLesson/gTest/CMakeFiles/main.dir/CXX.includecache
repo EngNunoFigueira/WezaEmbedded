@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/nundelTech/CppLesson/gTest/test_01.cpp
+iostream
+-
+stdio.h
+-
+gtest/gtest.h
+-
+
