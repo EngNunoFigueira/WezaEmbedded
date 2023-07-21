@@ -103,11 +103,11 @@ public:
         return licor->getPrice();
     }
     virtual double visit(const Tobacco *tobacco) const override {
-        std::cout << "The licor price is " << tobacco->getPrice() << std::endl;
+        std::cout << "The tobacco price is " << tobacco->getPrice() << std::endl;
         return tobacco->getPrice();
     }
     virtual double visit(const Necessity *necessity) const override {
-        std::cout << "The licor price is " << necessity->getPrice() << std::endl;
+        std::cout << "The clothes price is " << necessity->getPrice() << std::endl;
         return necessity->getPrice();
     }
 };
@@ -128,8 +128,12 @@ int main()
     Tobacco   *garret = new Tobacco(12.30);
     Necessity *cloths = new Necessity(745.59);
     ConsumerVisitor typeProductLicor;
+    ConsumerVisitor *reverse = new ConsumerVisitor();
     typeProductLicor.visit(limao);
     typeProductLicor.visit(cloths);
+
+    std::cout << "REVERSE NOW THE VISITOR:" << std::endl;
+   cloths->accept(reverse);
 
     return 0;
 }
