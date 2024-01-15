@@ -49,8 +49,8 @@ TEST(Mock, testMock)
     .WillByDefault(testing::Return());
     */
 
-  //EXPECT_CALL(mockServices, PrintMessage())
-// .Times(AtLeast(1));
+  EXPECT_CALL(mockServices, PrintMessage())
+  .Times(AtLeast(1));
   /*
     ON_CALL(mockServices, UserLogin("ekumbi", "salas519"))
     .WillByDefault(testing::Return("Nuno Bacano"));
@@ -72,8 +72,11 @@ TEST(Mock, testMock)
 
   EXPECT_CALL(mockServices, ShowScore())
   .Times(1)
-  .WillOnce(testing::Return(true));
+  .WillOnce(testing::Return(true))
+   .WillRepeatedly(testing::DoDefault());
 
+
+  john.PrintMessage("START CALL THE FOO OBJECT");
   bool case01 = john.BankLogin();
   bool case02 = john.ShowScore();
   EXPECT_TRUE(case01);

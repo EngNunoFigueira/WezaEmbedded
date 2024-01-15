@@ -96,10 +96,13 @@ int main(int argc, char ** argv)
  ptr->PrintValues();
  //end
 
- BankService _myBank;
- Foo _foo(_myBank);
  std::cout<< "Starting Using Google Gest Mock" <<std::endl;
+ //BankService _myBank;
+ //Foo _foo(_myBank);
+
  //_foo.PrintMessage("Hello Nuno Figueira");
- //bool valid = _foo.UserLogin("ekumbi", "salas519");
+
+ // This is correct way to call the class.
+  //bool valid = _foo.BankLogin();
   return 0;
 }
