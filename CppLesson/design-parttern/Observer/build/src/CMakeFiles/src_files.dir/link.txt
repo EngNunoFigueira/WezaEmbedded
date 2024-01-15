@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsrc_files.a  CMakeFiles/src_files.dir/Observer.cpp.o CMakeFiles/src_files.dir/DbContext.cpp.o CMakeFiles/src_files.dir/ObserverPattern.cpp.o
-/usr/bin/ranlib libsrc_files.a
