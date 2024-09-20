@@ -1,0 +1,6 @@
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/factory/build/CMakeFiles/rebuild_cache.dir
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/factory/build/CMakeFiles/edit_cache.dir
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/factory/build/CMakeFiles/main.dir
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/factory/build/src/CMakeFiles/rebuild_cache.dir
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/factory/build/src/CMakeFiles/edit_cache.dir
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/factory/build/src/CMakeFiles/src.dir

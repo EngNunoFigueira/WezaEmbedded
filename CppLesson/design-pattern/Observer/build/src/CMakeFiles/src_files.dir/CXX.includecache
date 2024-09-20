@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../includes/DbContext.h
+DbContext.h
+../includes/DbContext.h
+iostream
+-
+vector
+-
+
+../includes/Observer.h
+Observer.h
+../includes/Observer.h
+
+../includes/ObserverPattern.h
+iostream
+-
+DbContext.h
+../includes/DbContext.h
+ObserverPattern.h
+../includes/ObserverPattern.h
+
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/Observer/src/DbContext.cpp
+iostream
+-
+DbContext.h
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/Observer/src/DbContext.h
+
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/Observer/src/Observer.cpp
+iostream
+-
+Observer.h
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/Observer/src/Observer.h
+
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/Observer/src/ObserverPattern.cpp
+iostream
+-
+ObserverPattern.h
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/Observer/src/ObserverPattern.h
+

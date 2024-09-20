@@ -1,0 +1,3 @@
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/singlethon/build/CMakeFiles/rebuild_cache.dir
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/singlethon/build/CMakeFiles/edit_cache.dir
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/singlethon/build/CMakeFiles/main.dir

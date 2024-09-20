@@ -1,0 +1,6 @@
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/Observer/build/CMakeFiles/rebuild_cache.dir
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/Observer/build/CMakeFiles/edit_cache.dir
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/Observer/build/src/CMakeFiles/rebuild_cache.dir
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/Observer/build/src/CMakeFiles/edit_cache.dir
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/Observer/build/src/CMakeFiles/observer.dir
+/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/Observer/build/src/CMakeFiles/src_files.dir

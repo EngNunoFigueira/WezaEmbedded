@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/main.dir/main.cpp.o  -o bin/main  -Wl,-rpath,/media/nundelTech/WezaEmbedded/CppLesson/design-pattern/factory/build/src src/libsrc.so 
