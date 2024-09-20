@@ -1,11 +1,18 @@
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required(VERSION 3.10)
 
-message("This is the project path: "${CMAKE_SOURCE_DIR})
+project(MyProject)
 
-set(CMAKE_CXX_FLAG "-stdlib=libc++")
-set(CMAKE_CXX_STANDARD 20)
-SET(CMAKE_CXX_STANDARD_REQUIRED true)
+# Set the build type to Debug by default
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Debug)
+endif()
 
-add_executable(main main.cpp)
+# Set debug-specific flags
+set(CMAKE_CXX_FLAGS_DEBUG "-g -O0")
+set(CMAKE_C_FLAGS_DEBUG "-g -O0")
 
-target_link_libraries(main pthread)
+# Add debug-specific definitions
+add_compile_definitions($<$<CONFIG:Debug>:DEBUG>)
+
+# Add your source files and targets
+add_executable(MyExecutable main.cpp)

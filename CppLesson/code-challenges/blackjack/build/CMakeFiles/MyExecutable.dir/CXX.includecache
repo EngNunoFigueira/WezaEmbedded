@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/media/nundelTech/CppLesson/code-challenges/blackjack/main.cpp
+/media/nundelTech/WezaEmbedded/CppLesson/code-challenges/blackjack/main.cpp
 iostream
 -
 stdio.h
