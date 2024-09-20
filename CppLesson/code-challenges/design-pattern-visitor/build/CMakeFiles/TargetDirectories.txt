@@ -1,0 +1,3 @@
+/media/nundelTech/WezaEmbedded/CppLesson/code-challenges/design-pattern-visitor/build/CMakeFiles/rebuild_cache.dir
+/media/nundelTech/WezaEmbedded/CppLesson/code-challenges/design-pattern-visitor/build/CMakeFiles/edit_cache.dir
+/media/nundelTech/WezaEmbedded/CppLesson/code-challenges/design-pattern-visitor/build/CMakeFiles/main.dir

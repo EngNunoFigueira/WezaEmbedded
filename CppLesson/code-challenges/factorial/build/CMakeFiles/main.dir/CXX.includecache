@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/nundelTech/WezaEmbedded/CppLesson/code-challenges/factorial/main.cpp
+iostream
+-
+memory
+-
+string
+-
+bits/stdc++.h
+-
+boost/multiprecision/cpp_int.hpp
+-
+

@@ -1,0 +1,3 @@
+/media/nundelTech/WezaEmbedded/CppLesson/code-challenges/factorial/build/CMakeFiles/rebuild_cache.dir
+/media/nundelTech/WezaEmbedded/CppLesson/code-challenges/factorial/build/CMakeFiles/edit_cache.dir
+/media/nundelTech/WezaEmbedded/CppLesson/code-challenges/factorial/build/CMakeFiles/main.dir
