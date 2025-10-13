@@ -25,9 +25,12 @@ public:
       : name{_name}, surname{_surname}, role{_role}, docPassport{_docPassport},
         socialSecurityNumber{_socialSecurityNumber},
         welcomeDateOnCompany{_welcomeDateOnCompany}, salary{_salary} {
+
     // nothing todo
   }
+
   ~Employee(){};
+
   const std::string getRole() const { return role; }
   void showDocumentation() const {
     std::cout << "Good night sir, I am " << name << " " << surname
@@ -64,6 +67,7 @@ private:
 };
 
 class Manager : public Employee {
+
 public:
   Manager();
   Manager(const std::string &_name, const std::string &_surname,
@@ -83,7 +87,9 @@ private:
 };
 
 class Director : public Employee {
+
 public:
+
   Director();
   Director(const std::string &_name, const std::string &_surname,
            const std::string &_role, const std::string &_docPassport,
@@ -97,25 +103,33 @@ public:
   ~Director(){};
 
 private:
+
   STATUS isBusy{};
   int numberOfAttendedCall{0};
 };
 
 class PhoneCall {
+
 public:
+
   PhoneCall();
   PhoneCall(int _number, std::string _origin, int _calltimeDuration)
       : number{_number}, origin{_origin}, callTimeDuration{_calltimeDuration} {
+
     // Nothing todo
   }
+
   ~PhoneCall(){};
+
   const int getCallTimeDuration(const int _callTimeDuration) const {
     return callTimeDuration;
   }
+
   const int getPhoneNumber() const { return number; }
   const std::string getOrigin() { return origin; }
 
 private:
+
   int number{0};
   std::string origin{};
   int callTimeDuration{0};
@@ -152,8 +166,7 @@ STATUS answerCall(std::vector<EMPLOYEE> &empAvaible) {
 }
 
 /**
- * The dispatch method manager all entry calls linking the ring to avaible each
- * avaible respondent.
+ * The dispatch method manager all entry calls linking the ring to avaible respondent.
  *
  * In case of all respondent are busy, the call is forwarding to the manager
  * room and if all managers are busy too, it must be scaled or forwarding to the

@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  min-height: 100vh; /* Make sure it fills the viewport height */
+  background-image: url('/assets/images/pexels-stywo-1054218.jpg');
+  background-repeat: no-repeat; /* No tiling */
+  background-size: cover;       /* Scale to fill */
+  background-position: center;  /* Center the image */
+  background-color: white;      /* Fallback */
+}
